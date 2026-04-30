@@ -416,7 +416,7 @@ function renderNews(){
       <div class="badge-row">
         <span class="badge ${n.badge}">${n.reliabilityLabel}</span>
         ${n.local?'<span class="badge b-local">Local club</span>':''}
-        <span class="badge b-sport">${n.sport==='football'?(n.local?'Local football'):'Football'}${n.sport==='f1'?'Formula 1':''}${n.sport==='tennis'?'Tennis':''}</span>
+        <span class="badge b-sport">${n.sport==='football'?(n.local?'Local football':'Football'):(n.sport==='f1'?'Formula 1':'Tennis')}</span>
       </div>
       <div class="why-box">
         <div class="why-label">Why it matters</div>
